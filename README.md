@@ -79,11 +79,12 @@ Shoeb, A. H. (2009). *Application of Machine Learning to Epileptic Seizure Onset
 
 ## Limitations
 
-This analysis was based on two selected recordings from one subject in the CHB-MIT dataset: one recording without a seizure and one recording with an annotated seizure. The analysis may not represent patterns across other recordings or subjects.
+- The analysis uses eight selected recordings from one subject, not the full CHB-MIT dataset.
+- The observations represent individual channel-window measurements and should not be treated as independent subjects or seizure events.
+- The analysis is limited to one subject and does not establish whether the observed patterns apply to other individuals.
+- The extracted features describe selected signal characteristics and do not establish reliable seizure biomarkers.
 
-I used a stratified random split of 10-second EEG windows to evaluate the Logistic Regression and Random Forest models. Since windows from the same recordings could be present in both the training and test sets, the results do not show how well the models would perform on completely new recordings or subjects.
-
-The features were extracted from the average signal across the retained EEG channels. I did not evaluate individual channel activity or spatial patterns separately.
+This work is an independent exploratory analysis of a publicly available EEG dataset. It is intended to examine signal patterns and support visualization.
 
 ## Data source and citation
 

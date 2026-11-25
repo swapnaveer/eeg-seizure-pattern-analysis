@@ -5,7 +5,7 @@
 
 In this project, I explored signal patterns in selected scalp EEG recordings from one subject. The analysis examines signal amplitude, variability, and frequency-band power across annotated seizure and non-seizure periods. The resulting data are organized for visualization in Tableau.
 
-This is an educational, exploratory analysis—not a clinical device, diagnostic tool, or validated seizure detector. It uses a limited subset of one subject's recordings. Results cannot establish generalization to other people, hospitals, recording systems, or clinical settings.
+This is an exploratory analysis. It uses a limited subset of one subject's recordings. 
 
 ## Selected recordings and data
 
@@ -44,16 +44,6 @@ The window-level feature data and seizure event intervals are prepared for use i
 **Tableau dashboard:** [EEG Seizure Analysis — Signal Patterns](https://public.tableau.com/views/EEG_Seizure_Analysis_Dashboard/EEGSignalAnalysisSeizurePatterns?:language=en-US&publish=yes)
 
 <img width="1101" height="700" alt="image" src="https://github.com/user-attachments/assets/62751f53-9293-41c2-bf0b-61ca0804779c" />
-
-
-## Dataset and scope
-dda5017bb1767764c5d05da030080d5c7b2eadc5
-
-
-## Files
-
-- `data/tableau_exports/` — Tableau-ready data tables and recording notes.
-- `docs/EEG_Seizure_Analysis_CHBMIT_Final.ipynb` — Jupyter notebook documenting the EEG preprocessing, feature extraction, exploratory analysis, and classification.
 
 
 ## Repository contents

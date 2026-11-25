@@ -1,12 +1,9 @@
 # EEG Seizure Pattern Analysis
 
-**Project type:** Reproducible exploratory computational-neuroscience project  
 **Dataset:** CHB-MIT Scalp EEG Database (PhysioNet, version 1.0.0)  
-**Primary question:** How do time- and frequency-domain features of scalp EEG vary across annotated seizure and non-seizure periods in selected recordings?
+**Research question:** How do time- and frequency-domain features of scalp EEG vary across annotated seizure and non-seizure periods in selected recordings?
 
 In this project, I explored signal patterns in selected scalp EEG recordings from one subject. The analysis examines signal amplitude, variability, and frequency-band power across annotated seizure and non-seizure periods. The resulting data are organized for visualization in Tableau.
-
-This is an educational, exploratory analysis—not a clinical device, diagnostic tool, or validated seizure detector. It uses a limited subset of one subject's recordings. Results cannot establish generalization to other people, hospitals, recording systems, or clinical settings.
 
 ## 1. Selected recordings and data
 
@@ -46,20 +43,20 @@ The window-level feature data and seizure event intervals are prepared for use i
 
 The dashboard is intended for descriptive exploration. The project does not report predictive performance as evidence of seizure detection.
 
+<img width="1101" height="700" alt="image" src="https://github.com/user-attachments/assets/1abd9b0b-6ef5-415b-926d-9266d9c3243a" />
+
 ## 4. Limitations
 
 - The analysis uses eight selected recordings from one subject, not the full CHB-MIT dataset.
 - The observations are channel-window measurements and are not independent subjects or independent seizure events.
 - A single subject does not support conclusions about performance across individuals.
 - The extracted features describe selected signal characteristics and do not establish reliable seizure biomarkers.
-- This is not a clinically validated seizure detector.
 
-This work is an independent exploratory analysis of a publicly available EEG dataset. It is intended to examine signal patterns and support visualization, not diagnosis or clinical decision-making.
+This work is an independent exploratory analysis of a publicly available EEG dataset. It is intended to examine signal patterns and support visualization.
 
 ## 5. Files
 
 - `data/tableau_exports/` — Tableau-ready data tables and recording notes.
-- `docs/EEG_Seizure_Analysis_CHBMIT_original_notebook.ipynb` — an earlier notebook artifact documenting a smaller two-recording exploratory analysis. It is supplementary and is not the exact eight-recording feature-export workflow used for the Tableau dashboard.
 
 ## 6. Dataset citation
 

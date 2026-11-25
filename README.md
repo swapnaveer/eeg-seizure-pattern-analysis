@@ -1,6 +1,5 @@
 # EEG Seizure Pattern Analysis
 
-**Dataset:** CHB-MIT Scalp EEG Database (PhysioNet, version 1.0.0)  
 **Primary question:** How do time- and frequency-domain features of scalp EEG vary across annotated seizure and non-seizure periods in selected recordings?
 
 In this project, I explored signal patterns in selected scalp EEG recordings from one subject. The analysis examines signal amplitude, variability, and frequency-band power across annotated seizure and non-seizure periods. The resulting data are organized for visualization in Tableau.

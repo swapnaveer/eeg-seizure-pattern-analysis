@@ -6,6 +6,9 @@ An exploratory analysis of publicly available CHB-MIT scalp EEG recordings, exam
 
 **Tableau dashboard:** [EEG Seizure Analysis — Signal Patterns](https://public.tableau.com/views/EEG_Seizure_Analysis_Dashboard/EEGSignalAnalysisSeizurePatterns?:language=en-US&publish=yes)
 
+<img width="1101" height="700" alt="image" src="https://github.com/user-attachments/assets/62751f53-9293-41c2-bf0b-61ca0804779c" />
+
+
 ## Dataset and scope
 
 - Dataset: [CHB-MIT Scalp EEG Database on PhysioNet](https://physionet.org/content/chbmit/1.0.0/)

@@ -7,7 +7,7 @@ In this project, I explored signal patterns in selected scalp EEG recordings fro
 
 This is an educational, exploratory analysis—not a clinical device, diagnostic tool, or validated seizure detector. It uses a limited subset of one subject's recordings. Results cannot establish generalization to other people, hospitals, recording systems, or clinical settings.
 
-## 1. Selected recordings and data
+## Selected recordings and data
 
 The analysis uses eight recordings from subject CHB01:
 
@@ -24,7 +24,7 @@ The selected recordings cover approximately 7.6 hours. The recordings contain 23
 
 The full CHB-MIT dataset is larger; this project uses only the selected recordings listed above.
 
-## 2. Preprocessing and feature extraction
+## Preprocessing and feature extraction
 
 We apply a 1–40 Hz Butterworth band-pass filter and divide the recordings into non-overlapping 2-second windows.
 
@@ -37,7 +37,7 @@ For each channel and window, we calculate:
 
 The seizure label is based on overlap with the annotated seizure intervals. The 30–40 Hz feature represents only this portion of the conventional gamma band.
 
-## 3. Tableau visualization
+## Tableau visualization
 
 The window-level feature data and seizure event intervals are prepared for use in Tableau. The dashboard supports exploration of signal patterns over time, across EEG channels, and by frequency band.
 
@@ -47,26 +47,13 @@ The window-level feature data and seizure event intervals are prepared for use i
 
 
 ## Dataset and scope
->>>>>>> dda5017bb1767764c5d05da030080d5c7b2eadc5
+dda5017bb1767764c5d05da030080d5c7b2eadc5
 
-## 4. Limitations
 
-- The analysis uses eight selected recordings from one subject, not the full CHB-MIT dataset.
-- The observations are channel-window measurements and are not independent subjects or independent seizure events.
-- A single subject does not support conclusions about performance across individuals.
-- The extracted features describe selected signal characteristics and do not establish reliable seizure biomarkers.
-- This is not a clinically validated seizure detector.
-
-This work is an independent exploratory analysis of a publicly available EEG dataset. It is intended to examine signal patterns and support visualization.
-
-## 5. Files
+## Files
 
 - `data/tableau_exports/` — Tableau-ready data tables and recording notes.
 - `docs/EEG_Seizure_Analysis_CHBMIT_Final.ipynb` — Jupyter notebook documenting the EEG preprocessing, feature extraction, exploratory analysis, and classification.
-
-## 6. Dataset citation
-
-Shoeb, A. H. (2009). *Application of Machine Learning to Epileptic Seizure Onset Detection* [PhD thesis, Massachusetts Institute of Technology]. The CHB-MIT Scalp EEG Database is available via PhysioNet: [https://doi.org/10.13026/C2K01R](https://doi.org/10.13026/C2K01R).
 
 
 ## Repository contents
@@ -88,8 +75,8 @@ This work is an independent exploratory analysis of a publicly available EEG dat
 
 ## Data source and citation
 
-Shoeb, A. (2009). Application of Machine Learning to Epileptic Seizure Onset Detection and Treatment. Massachusetts Institute of Technology. [CHB-MIT Scalp EEG Database, PhysioNet](https://physionet.org/content/chbmit/1.0.0/). DOI: [10.13026/C2K01R](https://doi.org/10.13026/C2K01R).
+Guttag, J. (2010). *CHB-MIT Scalp EEG Database* (version 1.0.0). PhysioNet. https://doi.org/10.13026/C2K01R
 
-The dataset is distributed under the Open Data Commons Attribution License v1.0. Consult the dataset page for current terms and citation requirements.
+Shoeb, A. H. (2009). *Application of Machine Learning to Epileptic Seizure Onset Detection and Treatment* [PhD thesis, Massachusetts Institute of Technology].
 
->>>>>>> dda5017bb1767764c5d05da030080d5c7b2eadc5
+The dataset is distributed under the Open Data Commons Attribution License v1.0. Refer to the [PhysioNet dataset page](https://physionet.org/content/chbmit/1.0.0/) for access and usage terms.

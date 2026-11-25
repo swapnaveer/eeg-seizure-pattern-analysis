@@ -44,7 +44,14 @@ The window-level feature data and seizure event intervals are prepared for use i
 
 **Tableau dashboard:** [EEG Seizure Analysis — Signal Patterns](https://public.tableau.com/views/EEG_Seizure_Analysis_Dashboard/EEGSignalAnalysisSeizurePatterns?:language=en-US&publish=yes)
 
+<<<<<<< HEAD
 The dashboard is intended for descriptive exploration. The project does not report predictive performance as evidence of seizure detection.
+=======
+<img width="1101" height="700" alt="image" src="https://github.com/user-attachments/assets/62751f53-9293-41c2-bf0b-61ca0804779c" />
+
+
+## Dataset and scope
+>>>>>>> dda5017bb1767764c5d05da030080d5c7b2eadc5
 
 ## 4. Limitations
 
@@ -65,4 +72,27 @@ This work is an independent exploratory analysis of a publicly available EEG dat
 
 Shoeb, A. H. (2009). *Application of Machine Learning to Epileptic Seizure Onset Detection* [PhD thesis, Massachusetts Institute of Technology]. The CHB-MIT Scalp EEG Database is available via PhysioNet: [https://doi.org/10.13026/C2K01R](https://doi.org/10.13026/C2K01R).
 
+<<<<<<< HEAD
 Database acknowledgement: Children’s Hospital Boston and the Massachusetts Institute of Technology. Cite the dataset and comply with its Open Data Commons Attribution License v1.0.
+=======
+## Repository contents
+
+- `data/tableau_exports/eeg_window_features_tableau.csv` — compact Tableau-ready window-level feature table.
+- `data/tableau_exports/seizure_events_tableau.csv` — annotated seizure event intervals.
+- `data/tableau_exports/recording_coverage.csv` — recording coverage details.
+- `data/tableau_exports/README_analysis_notes.txt` — dataset and feature-generation notes.
+- `docs/EEG_Seizure_Analysis_CHBMIT_original_notebook.ipynb` — an earlier notebook artifact. It documents a smaller two-recording analysis and is included as supplementary material; it is not the exact eight-recording export pipeline used to create the Tableau-ready files.
+
+## Important limitations
+
+This is a descriptive, exploratory analysis of eight selected recordings from one subject, not the full CHB-MIT dataset. The 2-second channel-window observations are not independent subjects or independent seizure events. The analysis does not establish a validated seizure detector, clinical performance, or generalization to other individuals. No predictive performance claim should be inferred from the dashboard.
+
+Raw EDF recordings are not included in this repository. Download the dataset from PhysioNet and review its terms before use.
+
+## Data source and citation
+
+Shoeb, A. (2009). Application of Machine Learning to Epileptic Seizure Onset Detection and Treatment. Massachusetts Institute of Technology. [CHB-MIT Scalp EEG Database, PhysioNet](https://physionet.org/content/chbmit/1.0.0/). DOI: [10.13026/C2K01R](https://doi.org/10.13026/C2K01R).
+
+The dataset is distributed under the Open Data Commons Attribution License v1.0. Consult the dataset page for current terms and citation requirements.
+
+>>>>>>> dda5017bb1767764c5d05da030080d5c7b2eadc5

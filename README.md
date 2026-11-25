@@ -1,6 +1,5 @@
 # EEG Seizure Pattern Analysis
 
-**Project type:** Reproducible exploratory computational-neuroscience project  
 **Dataset:** CHB-MIT Scalp EEG Database (PhysioNet, version 1.0.0)  
 **Primary question:** How do time- and frequency-domain features of scalp EEG vary across annotated seizure and non-seizure periods in selected recordings?
 
@@ -44,9 +43,6 @@ The window-level feature data and seizure event intervals are prepared for use i
 
 **Tableau dashboard:** [EEG Seizure Analysis — Signal Patterns](https://public.tableau.com/views/EEG_Seizure_Analysis_Dashboard/EEGSignalAnalysisSeizurePatterns?:language=en-US&publish=yes)
 
-<<<<<<< HEAD
-The dashboard is intended for descriptive exploration. The project does not report predictive performance as evidence of seizure detection.
-=======
 <img width="1101" height="700" alt="image" src="https://github.com/user-attachments/assets/62751f53-9293-41c2-bf0b-61ca0804779c" />
 
 
@@ -61,33 +57,33 @@ The dashboard is intended for descriptive exploration. The project does not repo
 - The extracted features describe selected signal characteristics and do not establish reliable seizure biomarkers.
 - This is not a clinically validated seizure detector.
 
-This work is an independent exploratory analysis of a publicly available EEG dataset. It is intended to examine signal patterns and support visualization, not diagnosis or clinical decision-making.
+This work is an independent exploratory analysis of a publicly available EEG dataset. It is intended to examine signal patterns and support visualization.
 
 ## 5. Files
 
 - `data/tableau_exports/` — Tableau-ready data tables and recording notes.
-- `docs/EEG_Seizure_Analysis_CHBMIT_original_notebook.ipynb` — an earlier notebook artifact documenting a smaller two-recording exploratory analysis. It is supplementary and is not the exact eight-recording feature-export workflow used for the Tableau dashboard.
+- `docs/EEG_Seizure_Analysis_CHBMIT_Final.ipynb` — Jupyter notebook documenting the EEG preprocessing, feature extraction, exploratory analysis, and classification.
 
 ## 6. Dataset citation
 
 Shoeb, A. H. (2009). *Application of Machine Learning to Epileptic Seizure Onset Detection* [PhD thesis, Massachusetts Institute of Technology]. The CHB-MIT Scalp EEG Database is available via PhysioNet: [https://doi.org/10.13026/C2K01R](https://doi.org/10.13026/C2K01R).
 
-<<<<<<< HEAD
-Database acknowledgement: Children’s Hospital Boston and the Massachusetts Institute of Technology. Cite the dataset and comply with its Open Data Commons Attribution License v1.0.
-=======
+
 ## Repository contents
 
 - `data/tableau_exports/eeg_window_features_tableau.csv` — compact Tableau-ready window-level feature table.
 - `data/tableau_exports/seizure_events_tableau.csv` — annotated seizure event intervals.
 - `data/tableau_exports/recording_coverage.csv` — recording coverage details.
 - `data/tableau_exports/README_analysis_notes.txt` — dataset and feature-generation notes.
-- `docs/EEG_Seizure_Analysis_CHBMIT_original_notebook.ipynb` — an earlier notebook artifact. It documents a smaller two-recording analysis and is included as supplementary material; it is not the exact eight-recording export pipeline used to create the Tableau-ready files.
+- `docs/EEG_Seizure_Analysis_CHBMIT_Final.ipynb` — Jupyter notebook documenting the EEG preprocessing, feature extraction, exploratory analysis, and classification.
 
-## Important limitations
+## Limitations
 
-This is a descriptive, exploratory analysis of eight selected recordings from one subject, not the full CHB-MIT dataset. The 2-second channel-window observations are not independent subjects or independent seizure events. The analysis does not establish a validated seizure detector, clinical performance, or generalization to other individuals. No predictive performance claim should be inferred from the dashboard.
+This analysis was based on two selected recordings from one subject in the CHB-MIT dataset: one recording without a seizure and one recording with an annotated seizure. The analysis may not represent patterns across other recordings or subjects.
 
-Raw EDF recordings are not included in this repository. Download the dataset from PhysioNet and review its terms before use.
+I used a stratified random split of 10-second EEG windows to evaluate the Logistic Regression and Random Forest models. Since windows from the same recordings could be present in both the training and test sets, the results do not show how well the models would perform on completely new recordings or subjects.
+
+The features were extracted from the average signal across the retained EEG channels. I did not evaluate individual channel activity or spatial patterns separately.
 
 ## Data source and citation
 

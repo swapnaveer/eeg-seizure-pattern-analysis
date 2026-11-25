@@ -54,6 +54,3 @@ Shoeb, A. (2009). Application of Machine Learning to Epileptic Seizure Onset Det
 
 The dataset is distributed under the Open Data Commons Attribution License v1.0. Consult the dataset page for current terms and citation requirements.
 
-## Disclaimer
-
-This project is for educational and exploratory research purposes only. It is not a medical device and must not be used for diagnosis, treatment, or clinical decision-making.
